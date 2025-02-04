@@ -69,3 +69,6 @@ The expected result is
 }
 ```
 
+## Further development
+
+RESTful API for further development available at https://learn.microsoft.com/en-us/rest/api/aiservices/document-models?view=rest-aiservices-v4.0%20(2024-11-30)

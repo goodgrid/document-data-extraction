@@ -15,7 +15,7 @@ Sources:
 
 ## Deployment
 
-## Script
+### Script
 
 - Clone this project using `git clone https://github.com/goodgrid/document-data-extraction.git`
 
@@ -45,7 +45,7 @@ After the service has been deployed within the subscription, do the following:
 
 ## Usage
 
-Test the service using the following command:
+Test the service using the following command from within the cloned projects directory:
 ```
 kbonnet@MacBook-Pro-2 document-data-extraction % node test.js "/Users/kbonnet/Downloads/Kopie paspoort koen2.pdf"
 ```

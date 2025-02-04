@@ -39,7 +39,7 @@ After the service has been deployed within the subscription, do the following:
     export default config
   ```
 - Open its properties and copy the endpoint url (https://[chosen name].cognitiveservices.azure.com/)
-- Paste the value between the quotes after `azureBaseUrl` and make sure it ends on a slash
+- Paste the value between the quotes after `azureBaseUrl`, and append `documentintelligence/` 
 - Copy the first one of the two available API keys 
 - Paste is between the quotes after `azureToken`
 
@@ -53,20 +53,16 @@ kbonnet@MacBook-Pro-2 document-data-extraction % node test.js "/Users/kbonnet/Do
 The expected result is
 
 ```
-{
-  CountryRegion: 'NLD',
-  DateOfBirth: 'xxx',
-  DateOfExpiration: 'xxx',
-  DateOfIssue: 'xxx',
-  DocumentNumber: 'xxx',
-  DocumentType: 'P',
-  FirstName: 'Koen',
-  IssuingAuthority: 'xxx',
-  LastName: 'xxx',
-  Nationality: 'NLD',
-  PlaceOfBirth: 'xxx',
-  Sex: 'M'
-}
+Polling result
+Polling result
+Polling result
+Polling result
+Polling result
+Polling result
+Polling result
+Polling result
+Polling result
+[first name] [last name] was born on [year]-01-19 in [city], according to the Burg. van Utrecht
 ```
 
 ## Further development

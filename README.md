@@ -65,6 +65,8 @@ Polling result
 [first name] [last name] was born on [year]-01-19 in [city], according to the Burg. van Utrecht
 ```
 
+The functioning of the Azure service is asynchronious. It receives the document and responds to that request with a request ID. Using the request ID, the service is queried for processing status every second. As soon as the status is succeeded, the result is retrieved usng the request ID. Finally, the data is removed from the service, also by referencing the request ID.
+
 ## Further development
 
 RESTful API for further development available at https://learn.microsoft.com/en-us/rest/api/aiservices/document-models?view=rest-aiservices-v4.0%20(2024-11-30)

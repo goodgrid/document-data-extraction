@@ -1,3 +1,5 @@
 import { processDocument } from "./processDocument.js";
 
-console.log(await processDocument("/Users/kbonnet/Downloads/Kopie paspoort koen2.pdf"))
+const path = process.argv[2]
+
+console.log(await processDocument(path))
